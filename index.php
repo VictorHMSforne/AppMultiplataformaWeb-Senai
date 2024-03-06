@@ -49,7 +49,16 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Murilo Lindo
+                        <form action="cadpessoa.php" method="post">
+                            <label>Nome:</label>
+                            <input type="text" class="form-control" name="nome" placeholder="Digite o nome da pessoa" required/><!--Esse Required é um campo requirido(obrigatório)-->
+                            <label>Idade:</label>
+                            <input type="number" class="form-control" name="idade" required/>
+                            <label>Cidade:</label>
+                            <input tye="text" class="form-control" name="cidade" placeholder="Digite a Cidade da pessoa" required/>
+                            <br/>
+                            <button type="submit" class="btn btn-outline-success"><b>Cadastrar</b></button>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
